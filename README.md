@@ -1,7 +1,7 @@
-• Nome completo das integrantes da equipe:
-Loianne Mendes dos Santos
-Lorraine Pinheiro de Carvalho
-Paloma Eufrásio Alves Alexandre
+• Nome completo das integrantes da equipe: </br>
+Loianne Mendes dos Santos </br>
+Lorraine Pinheiro de Carvalho </br>
+Paloma Eufrásio Alves Alexandre </br>
 Thayná Nunes da Silva
 
 • Nome da situação problema escolhido: 
