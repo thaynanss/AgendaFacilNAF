@@ -1,13 +1,14 @@
 • Nome completo das integrantes da equipe: </br>
-Loianne Mendes dos Santos </br>
-Lorraine Pinheiro de Carvalho </br>
-Paloma Eufrásio Alves Alexandre </br>
-Thayná Nunes da Silva
+- Loianne Mendes dos Santos </br>
+- Lorraine Pinheiro de Carvalho </br>
+- Paloma Eufrásio Alves Alexandre </br>
+- Thayná Nunes da Silva
 
-• Nome da situação problema escolhido: 
-AgendaFácil NAF
+• Nome da situação problema escolhido: AgendaFácil NAF
 
-• Tecnologias utilizadas:
+• Tecnologias utilizadas: <br>
+- GitHub, para hospedagem do repositório; <br>
+- Figma, para criação dos protótipos.
 
 • Instruções para executar/abrir o MVP:
 
@@ -24,7 +25,8 @@ AgendaFácil NAF
 - Receber avaliações dos usuários após a realização dos atendimentos.
 
 • Público alvo da solução: 
-População local que precisa de assistência fiscal e contábil.
+População local que precisa de assistência fiscal e contábil. <br>
+Estudantes e professores que participam do programa de prestação de serviço à população.
 
 • Dores do público alvo: 
 Dificuldade de agendamento dos serviços do Núcleo de Apoio Contábil e Fiscal.
