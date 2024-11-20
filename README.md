@@ -12,7 +12,8 @@
 
 • Instruções para executar/abrir o MVP:
 
-• Informações adicionais:
+• Informações adicionais: <br>
+Páginas de protótipo criadas: cadastro de usuário, cadastro de alunos e professores, página de agendamento.
 
 • Informação de qual MVP definido: Protótipo
 
@@ -29,4 +30,5 @@ População local que precisa de assistência fiscal e contábil. <br>
 Estudantes e professores que participam do programa de prestação de serviço à população.
 
 • Dores do público alvo: 
-Dificuldade de agendamento dos serviços do Núcleo de Apoio Contábil e Fiscal.
+Dificuldade de agendamento dos serviços do Núcleo de Apoio Contábil e Fiscal. <br>
+Necessidade de organizar as demandas de atendimento do NAF (Núcleo de Apoio Contábil e Fiscal).
