@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="img_slogan">
+            <img src="./img/logo.png" alt="logo Naf">
+        </div>
+        <nav>
+            <ul class="menu_links_header ">
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./agendamento.html">Agendamentos</a></li>
+                <li><a href="./cadastro.html">Cadastro</a></li>
+                <li><a href="Avalie.html">Avalie</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+  <title>AGENDAMENTO</title>
+
+</head>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cc6f0;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1785b1;
+
+        }
+        .agendamentos {
+            margin-top: 20px;
+        }
+        .agendamento-item {
+            background-color: #f9f9f9;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .agendamento-item button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .agendamento-item button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="form-container">
+        <img src="img/favicon.png"> <h1>AGENDAMENTO</h1>  
+            <form class="container" id="agendamentoForm">
+ 
+                <input type="text" id="nome" placeholder="Nome" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="date" id="dataNascimento" placeholder="Data de Nascimento" required>
+            <input type="text" id="cpf" placeholder="CPF" required>
+            
+            <label for="dataAgendamento">Data do Agendamento</label>
+            <input type="date" id="dataAgendamento" required>
+            
+            <label for="horaAgendamento">Horário do Agendamento</label>
+            <select id="horaAgendamento" required>
+                <option value="">Selecione um horário</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+            </select>
+
+            <button type="submit">Agendar</button>
+        </form>
+    </div>
+
+    <div class="agendamentos" id="agendamentos">
+        <h1>Agendamentos Realizados</h1>
+        <div id="listaAgendamentos"></div>
+    </div>
+    <footer>
+
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>Contato</h3>
+                <p>Email: suporte.naf@outlook.com</p>
+                <p>Telefone: (21) 2641-7000</p>
+                <p>Endereço: Avenida Alberto Torres, 111 - Alto</p>
+
+                <h3>Siga-nos</h3>
+            <p>Facebook: Unifeso</p>
+            <p>Instagram: @Unifeso</p>
+            <p>X: /Unifeso</p>
+            </div>
+            <div class="links">
+                <h3></h3>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="Avalie.html">Avalie</a></li>
+    
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h3>Inscreva-se para receber nossas novidades!</h3>
+                <form class="form_footer" action="#">
+                    <input class="email_footer" type="email" placeholder="Seu e-mail">
+                    <button type="submit">Inscrever</button>
+                </form>
+            </div>
+        </div>
+        <p>© 2024 MVP AgendaFácil NAF Tere. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        document.getElementById('agendamentoForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var dataNascimento = document.getElementById('dataNascimento').value;
+            var cpf = document.getElementById('cpf').value;
+            var dataAgendamento = document.getElementById('dataAgendamento').value;
+            var horaAgendamento = document.getElementById('horaAgendamento').value;
+
+                        if (!email.includes('@')) {
+                alert('Por favor, insira um e-mail válido com "@"');
+                return;
+            }
+
+           
+            var agendamento = {
+                nome: nome,
+                email: email,
+                dataNascimento: dataNascimento,
+                cpf: cpf,
+                dataAgendamento: dataAgendamento,
+                horaAgendamento: horaAgendamento
+            };
+
+            
+            adicionarAgendamento(agendamento);
+
+            
+            document.getElementById('agendamentoForm').reset();
+        });
+
+       
+        function adicionarAgendamento(agendamento) {
+            var listaAgendamentos = document.getElementById('listaAgendamentos');
+
+            
+            var agendamentoDiv = document.createElement('div');
+            agendamentoDiv.classList.add('agendamento-item');
+            agendamentoDiv.innerHTML = `
+                <div>
+                    <strong>${agendamento.nome}</strong><br>
+                    E-mail: ${agendamento.email}<br>
+                    Data de Nascimento: ${agendamento.dataNascimento}<br>
+                    CPF: ${agendamento.cpf}<br>
+                    Data do Agendamento: ${agendamento.dataAgendamento}<br>
+                    Horário: ${agendamento.horaAgendamento}
+                </div>
+                <button onclick="cancelarAgendamento(this)">Cancelar</button>
+            `;
+
+        
+            listaAgendamentos.appendChild(agendamentoDiv);
+        }
+
+      
+        function cancelarAgendamento(button) {
+            var agendamentoDiv = button.parentElement;
+            agendamentoDiv.remove();
+        }
+    </script>
+
+</body>
+</html>
