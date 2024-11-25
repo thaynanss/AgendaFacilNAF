@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="img_slogan">
+            <img src="./img/logo.png" alt="logo Naf">
+        </div>
+        <nav>
+            <ul class="menu_links_header ">
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./agendamento.html">Agendamentos</a></li>
+                <li><a href="./cadastro.html">Cadastro</a></li>
+                <li><a href="Avalie.html">Avalie</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+  <title>NAF-UNIFESO-CADASTRO</title>
+
+</head>
+
+<body>
+                    
+    <div class="container">
+        <img src="img/favicon.png"> <h1>CADASTRO</h1>  
+            <form class="container" id="formCadastro" onsubmit="return validarFormulario()">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome Completo* "required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <div id="emailError" class="error">Por favor, insira um e-mail válido com '@'.</div>        
+                <label for="date">Data de Nascimento:</label>
+                <input type="date" name="date_of_birth" placeholder="Data de Nascimento" required>
+                <label for="number">CPF:</label>
+                <input type="number" name="cpf" placeholder="CPF" required>
+                <label for="password">Senha:</label>
+                <input type="password" name="password" placeholder="Senha*"required>
+                <input type="password" name="comfirm_password" placeholder="Confirme a Senha*" required>
+                <div class="perfil">
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <label for="checkbox"><strong>População Local</strong></label>
+                    <span id="error" class="error"></span>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+                
+            </div>
+
+                </a>
+            </div>
+    </div>
+    <footer>
+
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>Contato</h3>
+                <p>Email: suporte.naf@outlook.com</p>
+                <p>Telefone: (21) 2641-7000</p>
+                <p>Endereço: Avenida Alberto Torres, 111 - Alto</p>
+
+                <h3>Siga-nos</h3>
+            <p>Facebook: Unifeso</p>
+            <p>Instagram: @Unifeso</p>
+            <p>X: /Unifeso</p>
+            </div>
+            <div class="links">
+                <h3></h3>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="Avalie.html">Avalie</a></li>
+    
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h3>Inscreva-se para receber nossas novidades!</h3>
+                <form class="form_footer" action="#">
+                    <input class="email_footer" type="email" placeholder="Seu e-mail">
+                    <button type="submit">Inscrever</button>
+                </form>
+            </div>
+        </div>
+        <p>© 2024 MVP AgendaFácil NAF Tere. Todos os direitos reservados.</p>
+    </footer>
+
+<script>
+    function validarFormulario() {
+        var email = document.getElementById("email").value;
+        var emailError = document.getElementById("emailError");
+        var successMessage = document.getElementById("successMessage");
+
+        // Verifica se o e-mail contém o símbolo '@'
+        if (!email.includes('@')) {
+            emailError.style.display = "block";
+            successMessage.style.display = "none";
+            return false; // Impede o envio do formulário
+        } else {
+            emailError.style.display = "none";
+            successMessage.style.display = "block";
+            return false; // Impede o envio do formulário para teste
+        }
+    }
+</script>
+</body>
+
+
+</html>

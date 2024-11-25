@@ -1,0 +1,65 @@
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #5cc6f0;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1785b1;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.star {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star.selected, .star:hover {
+    color: #00fff2;
+}
+
+.feedback-response {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(39, 208, 61);
+}

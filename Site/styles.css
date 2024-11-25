@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/teste.jpeg'); /
+    background-position: center;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    color: #000000;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: textAnimation 3s ease-in-out infinite; 
+}
+.subtitulo_h1{
+    color: #000000;
+    font-size: 21px;
+}
+h2 {
+    color: #000000;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.divbtn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+input[type="text"], input[type="number"], input[type="password"], input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+}
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-animation: textfield;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    outline: none;
+    border-color: #5cc6f0
+}
+.button_colaborador {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #5cc6f0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button_colaborador:hover {
+    background-color: #1785b1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.button_submit{
+    background-color: #5cc6f0;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #5cc6f0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.button_submit:hover {
+    background-color: #1785b1;
+    color: #ffffff;
+}
+.button_cadastrar,
+.button_recuperacaoSenha {
+    color: #5cc6f0;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button_cadastrar:hover,
+.button_recuperacaoSenha:hover {
+    text-decoration: underline;
+}
+    .welcome-text {
+        font-family: 'Arial', cursive; 
+        font-size: 4rem;  
+        color: #47bbff;  
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 25px rgba(14, 54, 148, 0.7); 
+        letter-spacing: 5px;  
+        text-transform: uppercase;  
+        
+    } 
