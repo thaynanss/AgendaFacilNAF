@@ -1,16 +1,17 @@
-• Nome completo das integrantes da equipe: </br>
-- Loianne Mendes dos Santos </br>
-- Lorraine Pinheiro de Carvalho </br>
-- Paloma Eufrásio Alves Alexandre </br>
+• Nome completo das integrantes da equipe: <br>
+- Loianne Mendes dos Santos <br>
+- Lorraine Pinheiro de Carvalho <br>
+- Paloma Eufrásio Alves Alexandre <br>
 - Thayná Nunes da Silva
 
 • Nome da situação problema escolhido: AgendaFácil NAF
 
 • Tecnologias utilizadas: <br>
 - GitHub, para hospedagem do repositório; <br>
-- Figma, para criação dos protótipos.
+- Figma, para criação dos protótipos; <br>
+- HTML, CSS e JavaScript para a criação do projeto.
 
-• Instruções para executar/abrir o MVP:
+• Instruções para executar/abrir o MVP: Executar pelo link <https://thaynanss.github.io/AgendaFacilNAF/>
 
 • Informações adicionais: <br>
 Páginas de protótipo criadas: cadastro de usuário, cadastro de alunos e professores, página de agendamento.
